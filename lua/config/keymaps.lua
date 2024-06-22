@@ -5,8 +5,11 @@ local keymap = vim.keymap
 --    mycmd: the shortcut you want to use
 --    defaultcmd: the command you want to trigger
 --    desc: and optional description 
+
+--general
 keymap.set("", "<leader><leader>", "<S-:>", {desc = "Enter command"})
 keymap.set("n", "oo", "o<esc>", {desc = "goto nexline"})
+--netrw
 keymap.set("n", "<leader>f", 
                 "<S-:>e .<CR>", 
                 {desc = "open file explorer in current window"})
