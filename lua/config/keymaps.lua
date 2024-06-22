@@ -13,3 +13,17 @@ keymap.set("n", "<leader>f",
 keymap.set("n", "<leader>ff", 
                 "<S-:>let g:netrw_banner=0 | split | e .  <CR>", 
                 {desc = "open file explorer in new window"})
+
+------------------
+--PLUGIN KEYMAPS--
+------------------
+-- Telescope 
+keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>") 
+keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>")
+keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
+keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>")
+keymap.set("n", "<leader>fb", ":Telescope buffers<CR>")
+-- Comments 
+vim.api.nvim_set_keymap("n", "<C-k>", "gcc", {noremap=false})
+vim.api.nvim_set_keymap("v", "<C-k>", "gcc", {noremap=false})
+
