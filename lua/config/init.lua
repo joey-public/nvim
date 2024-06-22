@@ -1,3 +1,7 @@
+require('config.globals')
+require('config.options')
+require('config.keymaps')
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -11,8 +15,23 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Example using a list of specs with the default options
-vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
-vim.g.maplocalleader = "\\" -- Same for `maplocalleader`
+local opts = {
+	defaults = { lazy=true,},
+	install = { colorscheme={'nightfox'} },
+	rtp = {
+		disabled_plugins = {
+			"gzip",
+			"matchit",
+			"matchparen",
+			"netrwPlugin",
+			"tarPlugin",
+			"tohtml",
+			"tutor", 
+			"zipPlugin",
+		}
+	}, 
+	change_detection = { notify=true, }, 
+}
+
 --look at /lua/plugins/init.lua for plugin setup
-require("lazy").setup('plugins')
+require("lazy").setup('plugins', opts)
