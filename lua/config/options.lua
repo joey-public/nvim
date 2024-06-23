@@ -8,11 +8,15 @@ opt.expandtab = true
 opt.smartindent = true
 opt.wrap = false
 
--- Serch 
+-- Search 
 opt.incsearch = true
 opt.ignorecase = true
 opt.smartcase = true
 opt.hlsearch = true
+
+-- wildmenue
+opt.wildmode = longest, list, full
+opt.wildmenu = true
 
 ----Appearance
 opt.number = true

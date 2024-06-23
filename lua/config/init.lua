@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {
 	defaults = { lazy=true,},
-	install = { colorscheme={'nightfox'} },
+	install = { colorscheme={'zenbones'} },
 	rtp = {
 		disabled_plugins = {
 			"gzip",

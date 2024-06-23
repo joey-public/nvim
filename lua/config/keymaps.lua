@@ -10,12 +10,12 @@ local keymap = vim.keymap
 keymap.set("", "<leader><leader>", "<S-:>", {desc = "Enter command"})
 keymap.set("n", "oo", "o<esc>", {desc = "goto nexline"})
 --netrw
-keymap.set("n", "<leader>f", 
-                "<S-:>e .<CR>", 
-                {desc = "open file explorer in current window"})
-keymap.set("n", "<leader>ff", 
-                "<S-:>let g:netrw_banner=0 | split | e .  <CR>", 
-                {desc = "open file explorer in new window"})
+-- keymap.set("n", "<leader>f", 
+--                 "<S-:>e .<CR>", 
+--                 {desc = "open file explorer in current window"})
+-- keymap.set("n", "<leader>ff", 
+--                 "<S-:>let g:netrw_banner=0 | split | e .  <CR>", 
+--                 {desc = "open file explorer in new window"})
 
 ------------------
 --PLUGIN KEYMAPS--
