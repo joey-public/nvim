@@ -9,6 +9,9 @@ local keymap = vim.keymap
 --general
 keymap.set("", "<leader><leader>", "<S-:>", {desc = "Enter command"})
 keymap.set("n", "oo", "o<esc>", {desc = "goto nexline"})
+--create note
+keymap.set("n", "<leader>nn", "<S-:>e ~/Notes/")
+keymap.set("n", "<leader>nc", "<S-:>e ~/.config/nvim/")
 --netrw
 -- keymap.set("n", "<leader>f", 
 --                 "<S-:>e .<CR>", 
