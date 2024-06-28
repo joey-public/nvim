@@ -11,7 +11,7 @@ opt.wrap = false
 -- Search 
 opt.incsearch = true
 opt.ignorecase = true
-opt.smartcase = true
+--opt.smartcase = true
 opt.hlsearch = true
 
 -- wildmenue
@@ -45,3 +45,5 @@ opt.autochdir = false
 --opt.iskeyword:append("-")
 opt.clipboard:append("unnamedplus")
 opt.modifiable = true
+
+--Netrw 
